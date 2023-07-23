@@ -9,11 +9,14 @@ import cors from 'cors'
 
 const app = express();
 
-connect();
 // use of env
 config({
     path: "./data/config.env"
 });
+
+
+connect();
+
 
 
 /// using middle ware
