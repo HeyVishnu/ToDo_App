@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 
 export const connect = () =>{
-    mongoose.connect(MONGO_URI, {dbName: "backendapi"})
+    mongoose.connect(process.env.MONGO_URI, {dbName: "backendapi"})
     .then(()=>{
         console.log("backend connected")
     })
